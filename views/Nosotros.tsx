@@ -12,7 +12,7 @@ function Nosotros({
     route,
 }): React.JSX.Element {
  
-    console.log('route', route);
+    //console.log('route', route);
     const { clienteId, totalPagar } = route.params;
     const handleVisitInicio = () => {
         //navigation.navigate('Inicio');

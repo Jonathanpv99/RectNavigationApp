@@ -23,10 +23,16 @@ function App(): React.JSX.Element {
           <Stack.Screen
             name='Inicio'
             component={Inicio}
+            options={{
+              title: 'Componente Principal'
+            }}
           />
           <Stack.Screen
             name='Nosotros'
             component={Nosotros}
+            options={ ({route}) => ({
+              title: route.params.name,
+            })}
           />
       </Stack.Navigator>
     </NavigationContainer>

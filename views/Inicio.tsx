@@ -13,6 +13,7 @@ function Inicio({
  
     const info = {
         clienteId: 20,
+        name: 'Jonathan',
         totalPagar: 500,
     };
 
