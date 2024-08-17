@@ -19,12 +19,30 @@ function App(): React.JSX.Element {
     <NavigationContainer>
       <Stack.Navigator
         initialRouteName='Inicio'
+        screenOptions={{
+          headerStyle: {
+            backgroundColor: 'cornflowerblue',
+          },  
+          headerTitleStyle: {
+            fontWeight: 'bold',
+            color: '#fff',
+          },
+          headerTitleAlign: 'center',
+        }}
       >
           <Stack.Screen
             name='Inicio'
             component={Inicio}
             options={{
-              title: 'Componente Principal'
+              title: 'Componente Principal',
+              headerStyle: {
+                backgroundColor: '#F4511E',
+              },  
+              headerTitleStyle: {
+                fontWeight: 'bold',
+                color: '#fff',
+              },
+              headerTitleAlign: 'center',
             }}
           />
           <Stack.Screen
