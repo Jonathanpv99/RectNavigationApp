@@ -11,8 +11,13 @@ function Inicio({
     navigation,
 }): React.JSX.Element {
  
+    const info = {
+        clienteId: 20,
+        totalPagar: 500,
+    };
+
     const handleVisitNosotros = () => {
-        navigation.navigate('Nosotros');
+        navigation.navigate('Nosotros', info);
     }
 
   return (

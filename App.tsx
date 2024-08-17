@@ -6,6 +6,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import {
   Text,
   View,
+  StyleSheet,
 } from 'react-native';
 import Inicio from './views/Inicio';
 import Nosotros from './views/Nosotros';
@@ -27,9 +28,6 @@ function App(): React.JSX.Element {
             name='Nosotros'
             component={Nosotros}
           />
-      </Stack.Navigator>
-      <Stack.Navigator>
-
       </Stack.Navigator>
     </NavigationContainer>
   );

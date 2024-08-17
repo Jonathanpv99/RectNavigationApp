@@ -9,8 +9,11 @@ import {
 
 function Nosotros({
     navigation,
+    route,
 }): React.JSX.Element {
  
+    console.log('route', route);
+    const { clienteId, totalPagar } = route.params;
     const handleVisitInicio = () => {
         //navigation.navigate('Inicio');
         //navigation.goBack();
@@ -20,10 +23,13 @@ function Nosotros({
   return (
     <View style={styles.contenedor}>
         <Text>
-            Inicio
+            ClienteId: {clienteId}
+        </Text>
+        <Text>
+            Total $: {totalPagar}
         </Text>
         <Button
-            title='Ir a Nosotros'
+            title='Ir a Inicio'
             onPress={ () => handleVisitInicio() }
         />
     </View>
